@@ -1,10 +1,10 @@
 [![<ORG_NAME>](https://circleci.com/gh/irtaza06/ml-microservice-docker-kubernetes.svg?style=svg)](https://circleci.com/gh/irtaza06/ml-microservice-docker-kubernetes)
 
-#Project:
+# Project:
 
 Python based ML-Microservice - Docker Image - Kubernetes Deployment
 
-##Summary
+## Summary
 
 In this project, a Machine Learning Microservice API is operationalized. 
 
@@ -29,10 +29,12 @@ See detailed install instrunctions on corresponding websites
 
 ### Make prediction
 * To make a prediction, run, `./make_prediction.sh`
+
 **NOTE:** to make a prediction, run the above command in a separate tab or terminal window
 
 ### Upload created image to Dockerhub
 * To upload created Docker image to Dockerhub, run,  `./upload_docker.sh`
+
 **NOTE:** use your Docker credentials
 
 ### Deploy with Kubernetes 
