@@ -4,7 +4,7 @@ jobs:
   build:
     working_directory: ~/ml-microservice-docker-kubernetes
     docker:
-      - image: python:3.7.3-stretch
+      - image: circleci/python:3.7.3-stretch
 
 
     steps:
