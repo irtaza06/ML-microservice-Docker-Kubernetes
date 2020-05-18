@@ -5,7 +5,7 @@
 
 # Step 1:
 # Create dockerpath
-dockerpath=irtaza06/predictionapp:test
+dockerpath=irtaza06/predictionapp:test1
 
 # Step 2:  
 # Authenticate & tag

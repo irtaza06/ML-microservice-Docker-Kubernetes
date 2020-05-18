@@ -4,8 +4,8 @@
 
 # Step 1:
 # This is your Docker ID/path
-dockerpath=irtaza06/predictionapp:test
-podname=kubernetes-predictionapp
+dockerpath=irtaza06/predictionapp:test1
+podname=predictionapp
 podpath=pods/$podname
 
 # Step 2
@@ -21,7 +21,7 @@ kubectl get pods
 kubectl describe $podpath
 
 #waiting for deployment
-sleep 1m
+sleep 2m
 
 # Step 5:
 # Forward the container port to a host

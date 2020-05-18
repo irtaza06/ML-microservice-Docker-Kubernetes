@@ -1,5 +1,5 @@
 FROM python:3.7.3-stretch
-
+#ENV PYTHONUNBUFFERED=0
 ## Step 1:
 # Create a working directory
 WORKDIR /app
@@ -20,5 +20,5 @@ EXPOSE 80
 
 ## Step 5:
 # Run app.py at container launch
-CMD ["python", "app.py"]
+CMD ["python","-u", "app.py"]
 

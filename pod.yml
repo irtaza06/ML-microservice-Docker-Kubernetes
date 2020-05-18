@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: predictionapp
+spec:
+  selector:
+    matchLabels:
+      app: predictionapp
+  template:
+    metadata:
+      labels:
+        app: predictionapp
+    spec:
+      containers:
+      - name: hpa
+        image: irtaza06/predictionapp:test
+        env:
+        - name: PYTHONUNBUFFERED
+          value: "0"
