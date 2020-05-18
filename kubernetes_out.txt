@@ -1,0 +1,54 @@
+$ ./run_kubernetes.sh 
+pod/kubernetes-predictionapp created
+NAME                       READY   STATUS              RESTARTS   AGE
+kubernetes-predictionapp   0/1     ContainerCreating   0          0s
+Name:         kubernetes-predictionapp
+Namespace:    default
+Priority:     0
+Node:         minikube/192.168.39.199
+Start Time:   Mon, 18 May 2020 11:16:08 +0200
+Labels:       run=kubernetes-predictionapp
+Annotations:  <none>
+Status:       Pending
+IP:           
+IPs:          <none>
+Containers:
+  kubernetes-predictionapp:
+    Container ID:   
+    Image:          irtaza06/predictionapp:test
+    Image ID:       
+    Port:           <none>
+    Host Port:      <none>
+    State:          Waiting
+      Reason:       ContainerCreating
+    Ready:          False
+    Restart Count:  0
+    Environment:    <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from default-token-8pb7p (ro)
+Conditions:
+  Type              Status
+  Initialized       True 
+  Ready             False 
+  ContainersReady   False 
+  PodScheduled      True 
+Volumes:
+  default-token-8pb7p:
+    Type:        Secret (a volume populated by a Secret)
+    SecretName:  default-token-8pb7p
+    Optional:    false
+QoS Class:       BestEffort
+Node-Selectors:  <none>
+Tolerations:     node.kubernetes.io/not-ready:NoExecute for 300s
+                 node.kubernetes.io/unreachable:NoExecute for 300s
+Events:
+  Type    Reason     Age        From               Message
+  ----    ------     ----       ----               -------
+  Normal  Scheduled  <unknown>  default-scheduler  Successfully assigned default/kubernetes-predictionapp to minikube
+Forwarding from 127.0.0.1:5000 -> 80
+Forwarding from [::1]:5000 -> 80
+Handling connection for 5000
+Handling connection for 5000
+Handling connection for 5000
+Handling connection for 5000
+
